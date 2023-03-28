@@ -53,7 +53,6 @@ h1 {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  border-radius: 14px;
 }
 
 @media (max-width: 707px) {
@@ -112,7 +111,6 @@ h1 {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    border-radius: 14px;
   }
 
 }

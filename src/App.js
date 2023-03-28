@@ -11,6 +11,7 @@ function App() {
       <div className='contenedor-instrucciones'>
         <h2 className='instrucciones'>How it works?</h2>
         <p>Start typing your tasks to do, then press the <b>add</b> button.</p>
+        <p>Then, you can mark as <b>completed</b> clicking on the same task.</p>
       </div>
       
       <div className='tareas-lista-principal'>

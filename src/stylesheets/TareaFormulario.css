@@ -9,22 +9,46 @@
     max-width: 350px;
     padding: 10px;
     outline: none;
+    border-radius: 10px;
     border: 1px solid #1b1b32;
-    border-right: none;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 4px 2px -2px #000000bf;
+
 }
 
 .boton-tarea {
     padding: 10px;
-    border: 1px solid #1b1b32;
-    border-left: none;
+    box-shadow: 0px 4px 2px -2px #000000bf;
+    border: none;
     cursor: pointer;
-    background: #1b1b32;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: #fff;
     user-select: none;
+    background-color: #106913; /* Green */
+    color: white;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    animation: color 0.68s infinite forwards;
+    animation-play-state: paused;
+}
+.boton-tarea:hover {
+    animation-play-state: running;
+}
+
+@keyframes color {
+    0% {
+        background-color: #106913;
+    }
+    25% { 
+        background-color: #00b126;
+    }
+    50% {
+        background-color: #00d123;
+    }
+    75% { 
+        background-color: #239905;
+    }
+    100% {
+        background-color: #106913;
+    }
 }
 
 @media (max-width: 707px) {

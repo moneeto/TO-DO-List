@@ -5,10 +5,11 @@ function FormularioDeTarea(props){
 
 
     const [input, setInput] = useState('');
-
+    const [textoAgregado, setTextoAgregado] = useState(false);
 
     const manejarCambio = e => {
         setInput(e.target.value);
+        setTextoAgregado(true);
     };
 
     const manejarEnvio = e => {
@@ -19,9 +20,8 @@ function FormularioDeTarea(props){
             completada: false
         }
         props.onSubmit(tareaNueva);
-        
+        textoAgregado ? setInput('') : manejarCambio();
     };
-
 
 
     return(
@@ -36,8 +36,10 @@ function FormularioDeTarea(props){
             name='texto'
             onChange={manejarCambio}
             autoComplete='off'
+            value={input}
             />
-            <button className='boton-tarea'>
+            <button 
+            className='boton-tarea'>
                 Add
             </button>
         </form>

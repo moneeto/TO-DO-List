@@ -43,10 +43,17 @@ function ListaDeTareas() {
         setTareas(tareasActualizadas)
     };
 
+    // const eliminarTodo = () => {
+    //     const tareasActualizadas = tareas.pop()
+    //     setTareas(tareasActualizadas)
+        
+    // }
+    
     return (
         <>
             <TareaFormulario onSubmit={agregarTarea} />
             <div className='tarea-lista-contenedor'>
+                {/* <button onSubmit={eliminarTodo}>Borrar todo</button> */}
             {                                       // abrimos llaves porque necesitamos un metodo de javascript para arrays (".map")
                 tareas.map((tarea) =>               // metodo que toma cada una de los OBJETOS en el ARRAY y las pasa como argumento para la función flecha.
                 <Tarea                              //por cada OBJETO en el ARRAY pasado por argumento, se va a crear una nueva tarea con sus re| spectivas props
