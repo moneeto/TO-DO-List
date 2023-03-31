@@ -26,14 +26,39 @@
     color: white;
     border-radius: 10px;
     transition-duration: 0.2s;
-    animation: color 0.68s infinite forwards;
+    animation: color-verde 0.68s infinite forwards;
     animation-play-state: paused;
+    margin-right: 10px;
 }
 .boton-tarea:hover {
     animation-play-state: running;
 }
 
-@keyframes color {
+.boton-borrar {
+    display:initial;
+    margin-top: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 2px -2px #000000bf;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    background-color: #691310; /* Green */
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.boton-borrar:hover {
+    /* animation-play-state: running; */
+    background-color: #520000; 
+    transition: 0.5s;
+}
+
+.disabled {
+    display: none;
+}
+
+@keyframes color-verde {
     0% {
         background-color: #106913;
     }
@@ -48,6 +73,24 @@
     }
     100% {
         background-color: #106913;
+    }
+}
+
+@keyframes color-rojo {
+    0% {
+        background-color: #a30803;
+    }
+    25% { 
+        background-color: #e00c05;
+    }
+    50% {
+        background-color: #700a06;
+    }
+    75% { 
+        background-color: #ff0800;
+    }
+    100% {
+        background-color: #610401;
     }
 }
 

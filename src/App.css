@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Signika+Negative&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 html,
@@ -9,6 +11,9 @@ body {
   color: white;
   background-color: #1b1b32;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenedor-instrucciones {
@@ -20,26 +25,27 @@ body {
   padding: 0;
 }
 
-
 .aplicacion-tareas {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  border: 1px  white;
+  width: 100%;
 }
 
 h1 {
   color: #1b1b32;
   padding: 20px;
-  font-size: 25px;
-  font-family: Roboto, sans-serif;
-  font-weight: 800;
+  font-size: 2.2em;
+  font-weight: 800; 
 }
 
 .titulo-app {
   color: white;
-  font-size: 3em;
+  font-size: 5em;
+  font-family: 'Signika Negative', sans-serif;
 }
 
 .tareas-lista-principal{
